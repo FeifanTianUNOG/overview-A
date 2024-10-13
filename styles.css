@@ -1,0 +1,121 @@
+/* 会议条目整体样式 */
+#meeting-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+/* 会议条目的整体容器 */
+.meeting-wrapper {
+    display: flex;
+    width: 100%;
+    min-height: 10vh;
+    margin: 1vh 0;
+    background-color: #f8f8f8; /* 背景颜色 */
+}
+
+/* startTime 样式，占 15% 宽度 */
+.start-time {
+    background-color: #e6e8e9;
+    color: black;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4.5vw; /* 字体大小增加一倍 */
+    font-weight: bold;
+    text-align: center;
+}
+
+/* 可修改的会议条目的内容，排除 startTime */
+.meeting-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+    width: 85%;
+    height: 10vh;
+}
+
+/* info 部分样式，占 60% 宽度 */
+.info {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2%;
+    color: black;
+    font-size: 2.5vw; /* 字体大小增加一倍 */
+    position: relative;
+}
+
+/* 添加竖线 */
+.info::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 15%;
+    width: 1px;
+    height: 70%;
+    background-color: #999;
+}
+
+.title {
+    color: black;
+    font-size: 2.5vw;
+}
+
+/* info 部分的副标题是灰色 */
+.subtitle {
+    color: grey;
+    font-size: 2.3vw;
+}
+/* room 部分样式，占 20% 宽度 */
+.room {
+    width: 17.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2.5vw; /* 字体大小增加一倍 */
+    position: relative;
+    color:black;
+}
+
+.room-text {
+    font-size: 2.5vw;
+    color: black;
+}
+/* 添加竖线 */
+.room::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 15%;
+    width: 1px;
+    height: 70%;
+    background-color: #999;
+}
+
+
+/* floor 部分样式，占 20% 宽度 */
+.floor {
+    width: 17.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 2.5vw; /* 字体大小增加一倍 */
+    color:black;
+}
+
+/* floor 部分的文字是灰色 */
+.floor-text {
+    font-size: 2.3vw;
+     color: grey;
+}
