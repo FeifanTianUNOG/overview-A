@@ -27,8 +27,8 @@ async function getAccessToken() {
 
 // 获取会议数据
 async function fetchDatasetData() {
-    // const filterCondition = `building = 'A' AND LPAD(endTime, 5, '0') > TIME(NOW())`;
-    const filterCondition = `building = 'A' AND LPAD(endTime, 5, '0') > '10:00:00'`; // 筛选Building A的数据
+    const filterCondition = `building = 'A' AND LPAD(endTime, 5, '0') > TIME(NOW())`;
+    // const filterCondition = `building = 'A' AND LPAD(endTime, 5, '0') > '10:00:00'`; // 筛选Building A的数据
     const response = await fetch(`https://glacial-sands-72080-04219ba46fd2.herokuapp.com/https://feifantest.xibo.co.uk/api/dataset/data/${datasetId}?filter=${encodeURIComponent(filterCondition)}&start=0&length=5`, {
         method: 'GET',
         headers: {
