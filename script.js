@@ -64,7 +64,7 @@ async function displayMeetings(data) {
                     </div>
                     <div class="floor">
                         <div class="room-text">Niveau3</div>
-                        <div class="floor-text">Etage/Floor</div>
+                        <div class="floor-text">Étage/Floor</div>
                     </div>
                 </div>
             </div>
